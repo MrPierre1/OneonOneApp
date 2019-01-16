@@ -51,4 +51,3 @@ In order to log in to the Django admin interface you'll need to create a super u
     ./manage.py createsuperuser
 
 Follow the prompts on the screen. After that, start the server up and try to log in at [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin).
-# one
