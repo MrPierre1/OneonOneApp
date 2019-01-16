@@ -1,0 +1,59 @@
+{% extends "dashboard/base.html" %}
+{% load static %}
+<!-- <h1>Hello from dashboard.html</h1> -->
+{% block pageTitle %}Manager Dashboard{% endblock %}
+
+{% block content %}
+
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <br><br>
+        <h3 class="header indigo-text">{{user | title}}'s Account </h3>
+        <hr>
+        <ul>
+
+            {% for accountInfo in myaccount %}
+            <li>
+                - {{accountInfo}} <br>
+            </li>
+            <hr>
+            <br>
+            <li>
+                - {{accountInfo.manager}} <br>
+            </li>
+            <hr>
+            <br>
+            <li>
+                - {{accountInfo.first_name}} <br>
+            </li>
+            <hr>
+            <br>
+            <li>
+                - {{accountInfo.last_name}} <br>
+            </li>
+            <hr>
+            <br>
+            <li>
+                - {{accountInfo.email}} <br>
+            </li>
+            <hr>
+            <br>
+            <li>
+                - {{accountInfo.photo}} <br>
+            </li>
+            <hr>
+            <br>
+            <li>
+                <img src="{% static 'images/favicon.png' %}" alt="image1">
+                image
+            </li>
+            {% endfor %}
+
+        </ul>
+        <br><br>
+
+    </div>
+</div>
+
+
+{% endblock %}

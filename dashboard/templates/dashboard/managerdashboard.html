@@ -1,0 +1,27 @@
+{% extends "dashboard/base.html" %}
+<!-- <h1>Hello from dashboard.html</h1> -->
+{% block pageTitle %}Manager Dashboard{% endblock %}
+
+{% block content %}
+<h3>You are using the manager's view</h3>
+
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <br><br>
+        <h3 class="header indigo-text">Welcome Manager </h3>
+        <hr>
+        <ul>
+            {% for person in list %}
+            <li>
+                - {{person}}
+            </li>
+            {% endfor %}
+
+        </ul>
+        <br><br>
+
+    </div>
+</div>
+
+
+{% endblock %}

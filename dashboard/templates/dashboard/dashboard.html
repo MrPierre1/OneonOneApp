@@ -1,0 +1,32 @@
+{% extends "dashboard/base.html" %}
+<!-- <h1>Hello from dashboard.html</h1> -->
+{% block pageTitle %}Dashboard{% endblock %}
+
+{% block content %}
+
+
+<br><br>
+<h3 class="header indigo-text">Welcome {{user}} </h3>
+<hr>
+
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <br><br>
+        <h3 class="header indigo-text">Next One On One: 1/25/119 </h3>
+        <hr>
+        <br><br>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row center">
+        <div class="col s12 ">
+            <div class='center' id='caleandar'></div>
+
+        </div>
+    </div>
+    <br><br>
+</div>
+
+{% endblock %}
