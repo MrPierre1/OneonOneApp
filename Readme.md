@@ -52,11 +52,3 @@ In order to log in to the Django admin interface you'll need to create a super u
 
 Follow the prompts on the screen. After that, start the server up and try to log in at [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin).
 
-
-python3  virtualenv venv
-
-source venv/bin/activate
-
-python3 manage.py migrate
-
-python3 manage.py runserver
